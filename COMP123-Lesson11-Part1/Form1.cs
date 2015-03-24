@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace COMP123_Lesson11_Part1
 {
-    public partial class Form1 : Form
+    public partial class InputForm : Form
     {
-        public Form1()
+        public InputForm()
         {
             InitializeComponent();
+        }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            YouTypedTextBox.Text = FirstNameTextBox.Text + ' ' + LastNameTextBox.Text;
         }
     }
 }
